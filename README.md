@@ -1,2 +1,22 @@
 # SarcasmClassifier
-This repo consists of a trained Bi-LSTM model which is used to classify whether a given sentence is sarcastic or not.
+This repo is a sarcasm detection classifier built with GloVe embeddings and a BiLSTM model in PyTorch.
+It's hitting ~99% Train Accuracy and 86%+ Validation Accuracy — clean, fast, and no overengineering.
+
+## Project structure:
+```
+├── data/                     # Dataset in JSON format
+│   └── File.json
+│
+├── model/                    # Trained model weights
+│   └── SarcasmClassifier.pth
+│
+├── Notebook/                 # Full pipeline Jupyter notebook
+│   └── bilstm.ipynb
+│
+└── README.md                 # You're here
+```
+## Results:
+Training accuracy : 99.45%
+Validation accuracy : 86.67%
+
+You can download the GloVe embeddings from here - [https://nlp.stanford.edu/data/glove.6B.zip]
